@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+padding: 15px;
+background-color: white;
+position: sticky;
+top: 0px;
+}
+#navbar ul{
+display: flex;
+align-items: center;
+justify-content: left;
+}
+#navbar ul li{
+list-style: none;
+}
+#navbar ul li a{
+text-decoration: none;
+color: black;
+padding: 20px;
+font-weight: bold;
+font-family: 'Teko', sans-serif;
+}
+#navbar ul li a:hover{
+color: grey;
+
+}
+#firstSection{
+color: white;
+font-family:'Teko', sans-serif;
+height:80vh;
+
+}
+
+#firstSection::before{
+    content: "";
+    position: absolute;
+    background: url(/public/img/bg2.jpg) no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.mainbox{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 90px;
+max-width: 80%;
+margin: auto;
+
+}
+
+.smallbox h1{
+    font-size:3rem ;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+.smallbox p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.largebox img{
+    height: 300px;
+    width: 300px;
+    border: 2px black;
+    border-radius: 150px;
+}
+
+.buttons{
+    padding-top: 10px;
+}
+
+
+.btn {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 175px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: black;
+    background: linear-gradient(blue,purple);
+    border: 2px  white;
+}
+.center{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+    font-family:'Teko', sans-serif;
+}
+
+.abtsec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.box1{  
+display: flex;
+max-width: 40%;
+justify-content: left;
+flex-direction: column;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: grey;
+}  
+.box1 h1{
+    color: black;
+    font-size: 30px;
+}
+.box2{  
+display: flex;
+max-width: 40%;
+justify-content: right;
+flex-direction: column;
+}  
+.box2 img{    
+height: 650px;
+width: 350px;
+border: 2px black;
+border-radius: 30px;
+}
+
+.secbtn{
+    border: 2px  black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    /* width: 175px; */
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(blue,purple);
+} 
+.secbtn:hover{
+    color: white;
+}
+
+.services{
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 80%;
+margin: auto;
+
+}
+
+.servent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(blue,red);
+    
+}
+.serimg{
+    height:280px ;
+    width: 380px;
+}
+
+.servent div{
+    padding-top: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px blue;
+    border-radius: 10px;
+}
+.servent img{
+    border: 2px black;
+    border-radius: 10px;
+}
+
+.centertxt{
+    text-align: center;
+    font-family: cursive;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+form input {
+    display: block;
+    width: 1300px;
+    padding: 8px;
+    margin: 16px;
+    outline: none;
+text-align: center;
+border: 2px solid grey;
+border-radius: 10px;
+}
+
+form button {
+    display: block;
+    width: 1300px;
+    padding: 8px;
+    margin: 16px;
+    outline: none;
+text-align: center;
+border: 2px grey;
+border-radius: 10px;
+background-color: orange;
+font-weight: bold;
+}
+
+form button:hover{
+    background-color: orangered;
+}
+
+footer{
+    margin-top: 60px;
+height: 10vh;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;    
+font-family:'Teko', sans-serif;
+
+}
+
+
+
+
+
